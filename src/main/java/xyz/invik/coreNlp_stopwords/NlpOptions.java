@@ -1,11 +1,11 @@
-package intoxicant.analytics.coreNlp;
+package xyz.invik.coreNlp_stopwords;
 
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 
 import java.util.Properties;
 
 /**
- * User: jconwell
+ * User: jconwell, ricrogz
  * Date: 5/17/13
  * Helper class to setup the options for the Stanford NLP engine
  */

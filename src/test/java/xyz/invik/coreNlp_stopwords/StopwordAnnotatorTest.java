@@ -1,4 +1,4 @@
-package intoxicant.analytics.coreNlp;
+package xyz.invik.coreNlp_stopwords;
 
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
@@ -16,7 +16,7 @@ import java.util.Set;
 import static org.junit.Assert.*;
 
 /**
- * User: jconwell
+ * User: jconwell, ricrogz
  * Unit tests for StopwordAnnotator
  */
 public class StopwordAnnotatorTest {
@@ -41,7 +41,7 @@ public class StopwordAnnotatorTest {
     @Before
     public void before() {
         props.put("annotators", "tokenize, ssplit, stopword");
-        props.setProperty("customAnnotatorClass.stopword", "intoxicant.analytics.coreNlp.StopwordAnnotator");
+        props.setProperty("customAnnotatorClass.stopword", "xyz.invik.coreNlp_stopwords.StopwordAnnotator");
     }
 
     @org.junit.Test

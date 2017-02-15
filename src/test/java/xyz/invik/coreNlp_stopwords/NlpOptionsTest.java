@@ -1,4 +1,4 @@
-package intoxicant.analytics.coreNlp;
+package xyz.invik.coreNlp_stopwords;
 
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import org.junit.Test;
@@ -10,7 +10,7 @@ import static junit.framework.Assert.assertNotNull;
 import static junit.framework.Assert.assertTrue;
 
 /**
- * User: jconwell
+ * User: jconwell, ricrogz
  * Date: 5/17/13
  * Unit tests for NlpOptions class
  *

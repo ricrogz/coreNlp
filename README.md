@@ -1,16 +1,25 @@
-coreNlp
-=======
+coreNlp_stopwords
+=================
 
-This library is a growing set of extensions for and tools to work with [CoreNlp](http://www-nlp.stanford.edu/software/corenlp.shtml).
+**This is a fork from the original 'coreNlp' project, developed by jconwell at [https://github.com/jconwell/coreNlp](https://github.com/jconwell/coreNlp).**
+
+I have updated and tweaked this project to be a stopword-removal add-on to coreNlp v3.7.0. Feel free to use it if you like it.
+
+Some considerations:
+
+* As this is a personal project, I will not dedicate too much time to fix any references to jconwell or the original project. If you stumble into any of these, and it bothers you, please open an issue and report it.
+
+* This project is a "quickie": probably, some things will be broken (I am almost sure the tests are). Please be patient.
+
 
 Identifying Stopwords in CoreNlp
 --------------------------------
 
-CoreNlp doesnt have stopword identification built in, so I wrote an extension to its analytics pipeline (called Annatators) to check if a token's word and lemma value are stopwords.
+CoreNlp doesn't have stopword identification built in, so I wrote an extension to its analytics pipeline (called Annotators) to check if a token's word and lemma value are stopwords.
 
 By default, the StopwordAnnotator uses the built in Lucene stopword list, but you have to option to pass in a custom list of stopwords for it to use instead.  You can also specify if the StopwordAnnotator should check the lemma of the token against the stopword list or not.
 
-For examples of how to use the StopwordAnnotator, takea look at StopwordAnnotatorTest.java 
+For examples of how to use the StopwordAnnotator, take a look at StopwordAnnotatorTest.java 
 
 Friendly API for building a new StanfordCoreNLP instance
 --------------------------------------------------------
